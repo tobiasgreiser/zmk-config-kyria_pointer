@@ -46,10 +46,10 @@
             //                       | GUI | DEL | RET |  SPACE  |  ESC  |  |  RET  |  SPACE  | TAB | BSPC | R-ALT |
 
             bindings = <
-      &kp TAB  &kp Q  &kp W         &kp E     &kp R      &kp T                                                        &kp Y     &kp U         &kp I    &kp O     &kp P      &kp BSLH
-&mt LCTRL ESC  &kp A  &kp S         &kp D     &kp F      &kp G                                                        &kp H     &kp J         &kp K    &kp L  &kp SEMI       &kp SQT
- &kp QUESTION  &kp Z  &kp X         &kp C     &kp V      &kp B       &mo 1   &kp LGUI   &kp QUESTION       &mo 2      &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
-                             &kp QUESTION  &kp LALT  &kp SPACE  &kp LSHIFT  &kp RCTRL  &kp BACKSPACE  &kp RSHIFT  &kp ENTER  &kp RALT  &kp QUESTION
+      &kp TAB  &kp Q  &kp W  &kp E     &kp R      &kp T                                                        &kp Y     &kp U      &kp I    &kp O     &kp P  &kp EQUAL
+&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F      &kp G                                                        &kp H     &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+     &kp LBKT  &kp Z  &kp X  &kp C     &kp V      &kp B       &mo 1   &kp LGUI       &kp BSLH       &mo 2      &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp RBKT
+                             &none  &kp LALT  &kp SPACE  &kp LSHIFT  &kp RCTRL  &kp BACKSPACE  &kp RSHIFT  &kp ENTER  &kp RALT      &none
             >;
         };
 
@@ -62,10 +62,10 @@
             //                     | GUI | DEL | RET |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB | BSPC | R-ALT |
 
             bindings = <
-     &kp TAB  &kp Q  &kp W   &kp E   &kp R   &kp T                                   &kp Y   &kp U      &kp I    &kp O     &kp P      &kp BSLH
-     &kp ESC  &kp A  &kp S   &kp D   &kp F   &kp G                                   &kp H   &kp J      &kp K    &kp L  &kp SEMI       &kp SQT
-&kp QUESTION  &kp Z  &kp X   &kp C   &kp V   &kp B  &trans   &none   &none  &trans   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
-                            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+      &trans  &kp GRAVE  &kp TILDE     &kp E     &kp R  &kp RA(NUMBER_5)                                  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp UNDER  &kp MINUS     &kp QMARK
+      &trans   &kp EXCL     &kp AT  &kp HASH  &kp DLLR         &kp PRCNT                                  &kp CARET   &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR     &kp QMARK
+&kp QUESTION      &kp Z  &kp RA(S)     &kp C     &kp V             &kp B  &trans   &none   &none  &trans      &kp N   &kp PIPE  &kp QMARK  &kp QMARK  &kp QMARK  &kp QUESTION
+                                      &trans    &trans            &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
             >;
         };
 
