@@ -37,6 +37,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
