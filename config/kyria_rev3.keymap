@@ -64,10 +64,10 @@
             //                     | GUI | DEL | RET |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB | BSPC | R-ALT |
 
             bindings = <
-      &trans  &kp GRAVE  &kp TILDE     &kp E     &kp R  &kp RA(NUMBER_5)                                  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp UNDER  &kp MINUS     &kp QMARK
-      &trans   &kp EXCL     &kp AT  &kp HASH  &kp DLLR         &kp PRCNT                                  &kp CARET   &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR     &kp QMARK
-&kp QUESTION      &kp Z  &kp RA(S)     &kp C     &kp V             &kp B  &trans   &none   &none  &trans      &kp N   &kp PIPE  &kp QMARK  &kp QMARK  &kp QMARK  &kp QUESTION
-                                      &trans    &trans            &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &kp GRAVE  &kp TILDE     &none     &none  &kp RA(NUMBER_5)                                  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp UNDER  &kp MINUS  &none
+&trans   &kp EXCL     &kp AT  &kp HASH  &kp DLLR         &kp PRCNT                                  &kp CARET   &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &none
+ &none      &none  &kp RA(S)     &none     &none             &none  &trans   &none   &none  &trans      &none   &kp PIPE      &none      &none      &none  &none
+                                &trans    &trans            &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
             >;
         };
 
@@ -80,10 +80,10 @@
             //                     | GUI | DEL | RET |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB | BSPC | R-ALT |
 
             bindings = <
-      &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                  &kp F6  &kp F7     &kp F8   &kp F9   &kp F10      &kp BSLH
-      &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0       &kp SQT
-&kp QUESTION   &kp Z   &kp X   &kp C   &kp V   &kp B  &trans   &none   &none  &trans   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp QUESTION
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0  &none
+ &none   &none   &none   &none   &none   &none  &trans   &none   &none  &trans   &none   &none   &none   &none    &none  &none
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
