@@ -46,6 +46,16 @@
             key-positions = <7 8>;
             layers = <0>;
         };
+
+        shift_right {
+            bindings = <&kp RSHIFT>;
+            key-positions = <19 20>;
+        };
+
+        shift_left {
+            bindings = <&kp LSHIFT>;
+            key-positions = <16 15>;
+        };
     };
 
     keymap {
@@ -59,10 +69,10 @@
             //                       |_____| LALT | SPACE | SHIFT | CTRL |  | BSPC | SHIFT | RET | RALT | PSCRN |
 
             bindings = <
-      &kp TAB  &kp Q  &kp W  &kp E     &kp R      &kp T                                                        &kp Y     &kp U            &kp I    &kp O             &kp P  &kp EQUAL
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F      &kp G                                                        &kp H     &kp J            &kp K    &kp L  &lt ADJUST2 SEMI    &kp SQT
-     &kp LBKT  &kp Z  &kp X  &kp C     &kp V      &kp B       &mo 1   &kp LGUI       &kp BSLH       &mo 2      &kp N     &kp M        &kp COMMA  &kp DOT          &kp FSLH   &kp RBKT
-                             &none  &kp LALT  &kp SPACE  &kp LSHIFT  &kp RCTRL  &kp BACKSPACE  &kp RSHIFT  &kp ENTER  &kp RALT  &kp PRINTSCREEN
+      &kp TAB  &kp Q  &kp W  &kp E     &kp R      &kp T                                                      &kp Y     &kp U            &kp I    &kp O             &kp P  &kp EQUAL
+&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F      &kp G                                                      &kp H     &kp J            &kp K    &kp L  &lt ADJUST2 SEMI    &kp SQT
+     &kp LBKT  &kp Z  &kp X  &kp C     &kp V      &kp B      &mo 1   &kp LGUI       &kp BSLH      &mo 2      &kp N     &kp M        &kp COMMA  &kp DOT          &kp FSLH   &kp RBKT
+                             &none  &kp LALT  &kp SPACE  &kp SPACE  &kp RCTRL  &kp BACKSPACE  &kp ENTER  &kp ENTER  &kp RALT  &kp PRINTSCREEN
             >;
         };
 
@@ -86,9 +96,9 @@
 
         adjust_layer {
             bindings = <
-&trans         &none  &kp LC(RIGHT)         &none       &kp END         &none                                     &none  &kp PG_DN  &kp PG_UP   &kp HOME   &none   &bt BT_CLR
-&trans  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT   &none   &sys_reset
- &none  &out OUT_BLE   &out OUT_USB         &none         &none  &kp LC(LEFT)  &trans   &none   &none  &trans     &none      &none      &none      &none   &none  &bootloader
+&trans         &none  &kp LC(RIGHT)         &none       &kp END         &none                                     &none  &kp PG_DN  &kp PG_UP   &kp HOME  &none   &bt BT_CLR
+&trans  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &none   &sys_reset
+ &none  &out OUT_BLE   &out OUT_USB         &none         &none  &kp LC(LEFT)  &trans   &none   &none  &trans     &none      &none      &none      &none  &none  &bootloader
                                            &trans        &trans        &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans
             >;
         };
