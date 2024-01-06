@@ -27,6 +27,10 @@
     tapping-term-ms = <200>;
 };
 
+&mwh {
+  time-to-max-speed-ms = <500>;
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
